@@ -1,0 +1,66 @@
+[
+    {
+      "img": "https://i.ibb.co/rbX5hkt/Rectangle-2.png",
+      "course_name": "Introduction to Python",
+      "price": 49.99,
+      "course_details": "Learn the fundamentals of Python programming.",
+      "credit": 3
+    },
+    {
+      "img": "https://i.ibb.co/XxxDB5Q/Rectangle-2-1.png",
+      "course_name": "Database (MySQL)",
+      "price": 59.99,
+      "course_details": "Build responsive websites with HTML and CSS.",
+      "credit": 4
+    },
+    {
+      "img": "https://i.ibb.co/Vg0MFjd/Rectangle-2-2.png",
+      "course_name": "Introduction to C Programming",
+      "price": 69.99,
+      "course_details": "Start coding in JavaScript and create interactive web pages.",
+      "credit": 4
+    },
+    {
+      "img": "https://i.ibb.co/ZfqTW10/Rectangle-2-3.png",
+      "course_name": "Introduction to Algorithms",
+      "price": 79.99,
+      "course_details": "Master the Java programming language for app development.",
+      "credit": 5
+    },
+    {
+      "img": "https://i.ibb.co/VMjtYf5/Rectangle-2-4.png",
+      "course_name": "Introduction to C++ for DSA",
+      "price": 89.99,
+      "course_details": "Create games using C# and Unity game engine.",
+      "credit": 5
+    },
+    {
+      "img": "https://i.ibb.co/yRQX7T9/Rectangle-2-5.png",
+      "course_name": "Software Engineering",
+      "price": 99.99,
+      "course_details": "Explore data analysis and machine learning with Python.",
+      "credit": 6
+    },
+    {
+      "img": "https://i.ibb.co/pQvwdry/Rectangle-2-6.png",
+      "course_name": "Problem-Solving Part",
+      "price": 79.99,
+      "course_details": "Master SQL queries and database management.",
+      "credit": 5
+    },
+    {
+      "img": "https://i.ibb.co/Ycschrc/Rectangle-3.png",
+      "course_name": "Basic Data Structures",
+      "price": 89.99,
+      "course_details": "Build cross-platform mobile apps with React Native.",
+      "credit": 5
+    },
+    {
+      "img": "https://i.ibb.co/qdtS7GC/Rectangle-3-1.png",
+      "course_name": "Full Stack Web Development with Node.js",
+      "price": 109.99,
+      "course_details": "AWS, Cloud Computing",
+      "credit": 6
+    }
+  ]
+  
