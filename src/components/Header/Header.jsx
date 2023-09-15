@@ -3,7 +3,7 @@
 const Header = () => {
     return (
         <div>
-            <h1>Course Registration</h1>
+            <h1 className="text-center text-3xl font-bold my-10">Course Registration</h1>
         </div>
     );
 };
