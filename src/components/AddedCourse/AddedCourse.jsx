@@ -10,7 +10,7 @@ const AddedCourse = ({addedcourse , credit , remaining}) => {
             <h2 className="my-4 text-xl font-bold">Course Name</h2>
             <ol className="mb-4">
                 {
-                    addedcourse.map((item , idx) => <li className="text-base font-normal text-[#1C1B1B99] " key={idx}>{++num } {item.course_name}</li>)
+                    addedcourse.map((item , idx) => <li className="text-base font-normal text-[#1C1B1B99] " key={idx}>{++num }. {item.course_name}</li>)
                 }
             </ol>
 

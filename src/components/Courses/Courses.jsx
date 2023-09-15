@@ -34,7 +34,7 @@ const Courses = () => {
             setAddedCourse(newAdded);
         }
         else{
-            toast("Credit exceds");
+            toast("Credit exceds. You can not purchase anymore course");
         }
         
     }
