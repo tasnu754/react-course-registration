@@ -4,11 +4,11 @@ const AddedCourse = ({addedcourse}) => {
     let num = 0;
     return (
       
-        <div className="card w-[312px] h-[410px] bg-base-100 shadow-xl p-6">
+        <div className="card w-[312px]  bg-base-100 shadow-xl p-6">
             <h2 className="my-4 text-lg font-bold text-[#2F80ED]">Credit Hour Remaining 7 hr</h2>
             <hr />
             <h2 className="my-4 text-xl font-bold">Course Name</h2>
-            <ol className="mb-4"> {addedcourse.length}
+            <ol className="mb-4">
                 {
                     addedcourse.map((item , idx) => <li key={idx}>{++num } {item.course_name}</li>)
                 }

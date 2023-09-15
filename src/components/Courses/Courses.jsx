@@ -14,9 +14,15 @@ const Courses = () => {
   }, []);
 
   const handleAddedCourse = (course) =>{
-    const newAdded = [...addedcourse , course];
-    setAddedCourse(newAdded);
-    // console.log("Added");
+    const isExist = addedcourse.find((item) => item.id===course.id);
+
+    if(isExist){
+        alert("can not selected");
+    }
+    else{
+        const newAdded = [...addedcourse , course];
+        setAddedCourse(newAdded);
+    }
   }
 
   return (
