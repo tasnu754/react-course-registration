@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Course from "../Course/Course";
 import AddedCourse from "../AddedCourse/AddedCourse";
 
@@ -17,7 +19,7 @@ const Courses = () => {
     const isExist = addedcourse.find((item) => item.id===course.id);
 
     if(isExist){
-        alert("can not selected");
+        toast("You can not select same course twice");
     }
     else{
         const newAdded = [...addedcourse , course];
@@ -34,6 +36,7 @@ const Courses = () => {
       </div>
       <div>
         <AddedCourse addedcourse={addedcourse} ></AddedCourse>
+        <ToastContainer></ToastContainer>
       </div>
     </div>
   );
