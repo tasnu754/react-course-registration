@@ -8,6 +8,8 @@ import AddedCourse from "../AddedCourse/AddedCourse";
 const Courses = () => {
   const [courses, setCourses] = useState([]);
   const [addedcourse , setAddedCourse] = useState([]);
+  const [remaining , setRemaining] = useState(20);
+   const [credit , setCredit] = useState(0);
 
   useEffect(() => {
     fetch("blogs.json")
@@ -22,8 +24,19 @@ const Courses = () => {
         toast("You can not select same course twice");
     }
     else{
-        const newAdded = [...addedcourse , course];
-        setAddedCourse(newAdded);
+        let newCredit = credit + course.credit;
+        let newRemainig = remaining - course.credit;
+        if(newCredit <= 20 || newRemainig >= 0){
+            setCredit(newCredit);
+            setRemaining(newRemainig);
+
+            const newAdded = [...addedcourse , course];
+            setAddedCourse(newAdded);
+        }
+        else{
+            toast("Credit exceds");
+        }
+        
     }
   }
 
@@ -35,7 +48,7 @@ const Courses = () => {
         ))}
       </div>
       <div>
-        <AddedCourse addedcourse={addedcourse} ></AddedCourse>
+        <AddedCourse addedcourse={addedcourse} credit={credit} remaining={remaining} ></AddedCourse>
         <ToastContainer></ToastContainer>
       </div>
     </div>
